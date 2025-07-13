@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Steph_Curry_%2851915116957%29.jpg/1280px-Steph_Curry_%2851915116957%29.jpg") ;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#5c0c31;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90vw;
+    width: 600px;
+}
+
+.maintxt {
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #EEEEEE;
+    margin-bottom: 15px;
+}
+
+.scr-screen {
+    width: 150px;
+    height: 100px;
+    border: none;
+    color: #c8710c;
+    text-align: center;
+    border-radius: 5px;
+    background: #080001;
+    margin: 15px auto;
+    font-size: 80px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    background-color: #c8710c;
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+    color: #EEEEEE;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.reset {
+    width: 100px;
+    height: 45px;
+    margin: 20px auto;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    background-color: #c8710c;
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+    color:#EEEEEE;
+    cursor: pointer;
+}
+
+/* Layout for score sections */
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
