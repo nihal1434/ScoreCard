@@ -1,31 +1,16 @@
-let scr = document.getElementById("homeipt");
-let scrg = document.getElementById("gustipt");
+const srcHome = document.getElementById("homeipt");
+const scrGuest = document.getElementById("gustipt");
 
-function add1h() {
-    scr.textContent = parseInt(scr.textContent) + 1;
+function updateScore(team,points){
+   let element = team;
+   if(team==="home"){
+    element=srcHome;
+   }else{
+    element=scrGuest;
+   }
+    element.textContent=Number(element.textContent)+points;
 }
-
-function add2h() {
-    scr.textContent = parseInt(scr.textContent) + 2;
-}
-
-function add3h() {
-    scr.textContent = parseInt(scr.textContent) + 3;
-}
-
-function add1g() {
-    scrg.textContent = parseInt(scrg.textContent) + 1;
-}
-
-function add2g() {
-    scrg.textContent = parseInt(scrg.textContent) + 2;
-}
-
-function add3g() {
-    scrg.textContent = parseInt(scrg.textContent) + 3;
-}
-
-function resetScores() {
-    scr.textContent = 0;
-    scrg.textContent = 0;
+function resetScores(){
+    srcHome.textContent = 0;
+    scrGuest.textContent = 0;
 }
